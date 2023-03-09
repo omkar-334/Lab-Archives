@@ -1,0 +1,12 @@
+num=10
+amt=120.1
+code='ok'
+pi=3.1415926536
+pop=1393400000
+msg="hi"
+print("num = "+str(num))
+print("amt = "+str(amt))
+print("code = "+str(code))
+print("pi = "+str(pi))
+print("population = "+str(pop))
+print("message = "+str(msg))

@@ -1,0 +1,18 @@
+from calendar import monthrange, month_abbr
+
+def dict1(year):
+    d = {'year': year}
+    for i in range(1, 13):
+        d[month_abbr[i]] = monthrange(year, i)[1]
+    return d
+year=int(input("Enter Year"))
+print(dict1(year))
+
+def dict2(year, long_only=False):
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+                    'November', 'December']
+    days = [31, 28 + (year % 4 == 0), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    return dict((k, v) for k, v in zip(months, days))
+#print(dict2(year))
+
