@@ -1,0 +1,11 @@
+array = np.array([[1,2],
+                  [3,0], 
+                  [0,6]])
+print(array)
+
+print("Total sum: ", array.sum())
+print("Total mean: ", array.mean())
+print("Total std: ", array.std())
+print("Total min: ", array.min())
+print("Total max: ", array.max())
+print("Total cumsum: ", array.cumsum())
