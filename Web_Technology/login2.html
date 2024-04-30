@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #985d5d;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 25px;
+    }
+
+    .card {
+      width: 22rem;
+      background-color: #91d6eba4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-group {
+      margin: 10px;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      height: 35px;
+    }
+
+    label {
+      text-align: left;
+    }
+
+    video {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <script src="validation.js"></script>
+
+  <h1 style="color: #922a2a; font-size: 18px; text-align: center;"><strong>Login to discover popular tourist locations around you!</strong></h1>
+
+  <div class="flex-container">
+    <video src="animation.mp4" alt="Icon" autoplay loop></video>
+    <div class="card">
+      <div class="card-body">
+        <form action="main.html" method="post" onsubmit="return validateLogin()" method="post">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <button type="submit" class="btn btn-primary" >Login</button>
+        </form>
+        <p style="margin-top: 20px; text-align: center;">Don't have an account? <a href="register.html">Register</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
