@@ -26,7 +26,7 @@ var cities = [
   };
 //   function searchCityImage(city) {
 
-//     var url = 'https://www.googleapis.com/customsearch/v1?q=' + encodeURIComponent(city) + '+icon&cx=161850176d9704de7&searchType=image&key=AIzaSyD17bWqNHsqcUMoFJtarxMq8gTSdZWuM60';
+//     var url = 'https://www.googleapis.com/customsearch/v1?q=' + encodeURIComponent(city) + '+icon&cx=161850176d9704de7&searchType=image&key={key}';
 
 //     fetch(url)
 //     .then(response => response.json())
